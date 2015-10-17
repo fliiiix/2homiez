@@ -1,0 +1,224 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>2 Homiez</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        @font-face {
+            font-family: 'lets_go_digitalregular';
+            src: url('/assets/webfont/lets_go_digital_regular-webfont.eot');
+            src: url('/assets/webfont/lets_go_digital_regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('/assets/webfont/lets_go_digital_regular-webfont.woff2') format('woff2'),
+                 url('/assets/webfont/lets_go_digital_regular-webfont.woff') format('woff'),
+                 url('/assets/webfont/lets_go_digital_regular-webfont.ttf') format('truetype'),
+                 url('/assets/webfont/lets_go_digital_regular-webfont.svg#lets_go_digitalregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        html {
+           background-color: rgb(6,6,6);
+           min-width: 280px;
+        }
+        h1, h3, #credits {
+            font-family: 'lets_go_digitalregular' !important;
+            font-weight : normal;
+        }
+        h2, table {
+            font-family: "Lucida Console", Monaco, monospace;
+            font-weight: normal;
+        }
+        #header {
+            color: rgb(230, 12, 5);
+            height: 400px;  
+        }
+        #footer {
+            min-height: 300px;
+        }
+        h1 {
+            font-size: 18em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-60%);
+        }
+        h2  {
+            margin: 30px 0 0 0;
+            padding: 0;
+            font-size: 5em;
+        }
+        h3 {
+            margin: 10px 0 30px 0;
+            padding: 0;
+            font-size: 3em;
+            color: rgb(230, 12, 5);
+            text-align: center;
+        }
+        table {
+            font-size: 2.5em;
+            width:100%;
+        }
+        .red {
+            color: rgb(230, 12, 5);
+        }
+        .l-box {
+            padding: 1em;
+        }
+        .row {
+            background-color: #d3d3d3;
+        }
+        #sc-widget {
+            min-height: 180px;
+        }
+        #tracklist {
+            padding: 1em 1em 1em 4em;
+        }
+        #playon {
+            margin-top: 40px;
+            text-align: center;
+            width: 100%;
+        }
+        a > img {
+            height: 45px;
+        }
+        #spotify {
+            height: 43px;
+            border: 1px solid #d3d3d3;
+            border-radius: 8px;
+        }
+        #credits {
+            text-align: right;
+            font-size: 1.5em;
+            color: rgb(230, 12, 5);
+        }
+        #credits > a {
+            color: rgb(230, 12, 5);
+        }
+        @media screen and (min-width: 560px) and (max-width: 1400px){
+            h1 {
+                font-size: 8em;
+            }
+            #playon {
+                margin-top: 180px;
+            }
+            h2 {
+                margin-top: 0px;
+                font-size: 3.5em;
+            }
+            table {
+                font-size: 1.5em;
+            }
+        }
+        @media screen and (max-width: 35.5em){
+            h1 {
+                top: 20%;
+                font-size: 4em;
+            }
+            h2 {
+                margin-top: 0px;
+                font-size: 2.5em;
+            }
+            table {
+                font-size: 1.2em;
+            }
+            #header {
+                height: 250px;  
+            }
+            #tracklist{
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1" id="header">
+            <h1>2 Homiez</h1>
+            <div id="playon">
+                <a href="https://geo.itunes.apple.com/us/album/2-homiez/id1047956559?mt=1&app=music"><img src="/assets/stores/itunes.svg" alt="buy on itunes"></a>
+                <a href="https://play.google.com/store/music/album?id=Bapouz4z6tssnrkpw56lrm4bkoe"><img src="/assets/stores/play.png" alt="buy on google play"></a>
+                <a href="https://open.spotify.com/album/3rqf1vp3AZ1SRtRVZ8VNXR"><img id="spotify" src="/assets/stores/spotify.svg" alt="listen on spotify"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="l-box" id="tracklist">
+                    <h2>Tracklist</h2>
+                    <table>
+                        <tr>
+                            <td>01</td>
+                            <td>We Here</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>For Real</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Black Tinted Windows</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Rooftop (Remix)</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>On the Run</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>City Boyz</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>Go Viral</td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td>VIP</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2" style="margin-right:-5px;">
+                <img class="pure-img" src="/assets/image/2homiez_cd.png" alt="cd cover">
+            </div>
+        </div>
+        <div class="pure-u-1" id="footer">
+            <div class="l-box">
+                <h3>Check it out!</h3>
+                <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/luckymartin/on-the-run-mixtape-2-homiez&amp;auto_play=false&amp;auto_advance=true&amp;buying=false&amp;liking=false&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=true&amp;start_track=0" width="100%" scrolling="no" frameborder="no"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="pure-u-1">
+        <div id="credits" class="l-box">
+            music by <a href="http://luckymartin.ch">luckymartin</a>
+        </div>
+    </div>
+    <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+</body>
+</html>
